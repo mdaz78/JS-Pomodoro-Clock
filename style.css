@@ -44,6 +44,15 @@ h3 {
   height: 40px;
 }
 
+#buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#start, #pause, #reset {
+  padding: 4px 15px;
+}
+
 @media only screen and (max-width: 990px) {
   #footer {
     margin-top: 50%;
