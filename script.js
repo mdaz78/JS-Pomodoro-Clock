@@ -16,10 +16,7 @@ function sessionMinus() {
 
 
 // event listeners and function for break length
-document.getElementById('break-plus').addEventListener('click', breakPlus);
-document.getElementById('break-minus').addEventListener('click', breakMinus);
-let breakTime = document.getElementById('break-time').innerText;
-
+    
 function breakPlus() {
   breakTime = Number(breakTime);
   document.getElementById('break-time').innerText = breakTime < 15 ? breakTime += 1 : breakTime;
