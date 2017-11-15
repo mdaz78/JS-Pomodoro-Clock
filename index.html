@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pomodoro Clock</title>
+ <!-- meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro" rel="stylesheet">
+
+
+ <!-- Custom CSS -->
+ <link rel="stylesheet" href="style.css">
+
+ <title>Pomodoro Clock</title>
 </head>
 <body>
-  <header>
+  <header class="text-center">
     <h1>Pomodoro Clock</h1>
   </header>
 
   <main>
-    <div id='session-length'>
-      <h3>Session Length</h3>
-      <button>+</button>
-      <p>00:00:00</p>
-      <button>-</button>
+    <div class="container" id="time-changers">
+
+      <div class="col-md-2 col-xs-0"></div>
+      
+      <div class="col-md-4 col-xs-12">
+        <div id='session-length' class="text-center">
+          <h3>Session Length</h3>
+          <button>+</button>
+          <p>25</p>
+          <button>-</button>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-xs-12">
+        <div id='break-length' class="text-center">
+          <h3>Break Length</h3>
+          <button>+</button>
+          <p>5</p>
+          <button>-</button>
+        </div>  
+      </div>  
     </div>
 
-    <div id='break-length'>
-      <h3>Break Length</h3>
-      <button>+</button>
-      <p>00:00:00</p>
-      <button>-</button>
-    </div>
-
-    <div id='timer'>
-      <h3>Time</h3>
-      <p>00:00:00</p>
+    <div class="text-center">
+      <div id='timer'>
+        <h3>Time</h3>
+        <p>00:00:00</p>
+      </div>
     </div>
   </main>
 </body>
