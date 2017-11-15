@@ -1,0 +1,35 @@
+body {
+  background-color: #5e5656;
+  color: white;
+}
+
+button {
+  background-color: #5e5656;
+}
+
+header {
+  font-family: 'Muli', sans-serif;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+p {
+  display: inline;
+  text-align: center;
+}
+
+button {
+  margin: 0px 10px;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+#timer {
+  margin-top: 12%;
+}
+
+#time-changers {
+  margin-top: 5%;
+}
