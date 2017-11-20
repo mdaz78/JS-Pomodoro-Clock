@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <!-- meta tags -->
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- <!-- Bootstrap -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
- <!-- Font Awesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
- <!-- Google fonts -->
- <link href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro" rel="stylesheet">
-
- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-
-
-
- <!-- Custom CSS -->
- <link rel="stylesheet" href="style.css">
-
- <title>Pomodoro Clock</title>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Pomodoro Clock</title>
 </head>
+
 <body>
   <header class="text-center">
     <h1>Pomodoro Clock</h1>
   </header>
-
   <main>
     <div class="container" id="time-changers">
-
       <div class="col-md-2 col-xs-0"></div>
-      
       <div class="col-md-4 col-xs-12">
         <div id='session-length' class="text-center">
           <h3>Session Length</h3>
@@ -41,33 +33,28 @@
           <button id="session-minus">-</button>
         </div>
       </div>
-      
       <div class="col-md-4 col-xs-12">
         <div id='break-length' class="text-center">
           <h3>Break Length</h3>
           <button id="break-plus">+</button>
           <p id="break-time"><span id="length-of-break-time">5</span> m</p>
           <button id="break-minus">-</button>
-        </div>  
-      </div>  
+        </div>
+      </div>
     </div>
-
     <div class="text-center">
-        <h3 id="timer-div">Time</h3>
-        <p id="timer"><span id="length-of-timer">25</span> m</p>
+      <h3 id="timer-div">Time</h3>
+      <p id="timer"><span id="length-of-timer">25</span> m</p>
     </div>
-
     <div id="buttons">
       <button id="start">Start</button>
       <button id="reset">Reset</button>
-
     </div>
   </main>
-
   <footer id="footer" class="text-center">
     Coded by <a href="https://www.linkedin.com/in/mdaz78/" target="_blank"> Zafar</a>
   </footer>
-
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
