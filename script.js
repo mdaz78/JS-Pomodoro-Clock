@@ -34,8 +34,12 @@ function breakMinus() {
   document.getElementById('length-of-break-time').innerText = breakTime > 2 ? breakTime -= 1 : breakTime;
 }
 
-function startTimer() {
-  
+function startTimer(timeInMilli, type) {
+  document.getElementById('session-plus').disabled = true;
+  document.getElementById('session-minus').disabled = true;
+  document.getElementById('break-plus').disabled = true;
+  document.getElementById('break-minus').disabled = true;
+  document.getElementById('start').disabled = true;
 }
 
 function resetTimer() {
@@ -43,5 +47,5 @@ function resetTimer() {
 }
 
 // event listener for start and reset
-document.getElementById('start').addEventListener('click', startTimer);
+document.getElementById('start').addEventListener('click', () => startTimer(sessionTime, "session"));
 document.getElementById('reset').addEventListener('click', resetTimer);
