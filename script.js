@@ -3,7 +3,7 @@ document.getElementById('session-plus').addEventListener('click', sessionPlus);
 document.getElementById('session-minus').addEventListener('click', sessionMinus);
 let sessionTime = document.getElementById("length-of-session-time").innerText;
 
-function sessionPlus () {
+function sessionPlus() {
   sessionTime = Number(sessionTime);
   sessionTime = sessionTime < 60 ? sessionTime += 5 : sessionTime;
   document.getElementById('length-of-session-time').innerText = sessionTime;
@@ -34,16 +34,14 @@ function breakMinus() {
   document.getElementById('length-of-break-time').innerText = breakTime > 2 ? breakTime -= 1 : breakTime;
 }
 
-// event listener for start and reset
-document.getElementById('start').addEventListener('click', startTimer);
-document.getElementById('reset').addEventListener('click', resetTimer);
-
 function startTimer() {
-  let currentTime = new Date().getTime();
-  let sessionLength = document.getElementById('length-of-timer').innerText * 60000;
-  let breakLength = document.getElementById('length-of-break-time').innerText * 60000;
-  console.log(currentTime + " " + sessionLength + " " + breakLength);
+  
 }
 
 function resetTimer() {
+  location.reload();
 }
+
+// event listener for start and reset
+document.getElementById('start').addEventListener('click', startTimer);
+document.getElementById('reset').addEventListener('click', resetTimer);
