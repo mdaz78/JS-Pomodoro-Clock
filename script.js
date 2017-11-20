@@ -13,7 +13,7 @@ function sessionPlus() {
 
 function sessionMinus() {
   sessionTime = Number(sessionTime);
-  sessionTime = sessionTime > 1 ? sessionTime -= 1 : sessionTime;
+  sessionTime = sessionTime > 5 ? sessionTime -= 5 : sessionTime;
   document.getElementById('length-of-session-time').innerText = sessionTime;
   document.getElementById('length-of-timer').innerText = sessionTime;
 }
@@ -35,6 +35,14 @@ function breakMinus() {
 }
 
 function startTimer(length, type) {
+  if (type == 'session') {
+    document.getElementById('session-length').style.color = '#bab6ed';
+    document.getElementById('break-length').style.color = 'white';
+  } else {
+    document.getElementById('break-length').style.color = '#bab6ed';
+    document.getElementById('break-length').style.color = 'white';
+  }
+
   document.getElementById('session-plus').disabled = true;
   document.getElementById('session-minus').disabled = true;
   document.getElementById('break-plus').disabled = true;
